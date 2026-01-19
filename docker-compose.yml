@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./server
+    container_name: aichatbot-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./client
+    container_name: aichatbot-frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    restart: unless-stopped

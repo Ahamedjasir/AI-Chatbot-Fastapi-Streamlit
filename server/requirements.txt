@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+
+passlib[argon2]
+argon2-cffi
+python-jose
+
+sqlalchemy
+python-multipart
+
+requests
+groq
+
+python-dotenv
