@@ -3,7 +3,7 @@ import requests
 import os
 
 # ---------------- CONFIG ----------------
-BACKEND_URL = os.getenv("BACKEND_URL", "http://backend:8000")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://aichatbot-backend-production-5ad8.up.railway.app/")
 
 st.set_page_config(page_title="AI Assistant", page_icon="🤖")
 st.title("AI Assistant")
